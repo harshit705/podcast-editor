@@ -7,10 +7,38 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies & Builds
 node_modules
+frontend/node_modules
 dist
+frontend/dist
 dist-ssr
 *.local
+
+# Python & AI Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Backend Uploads, Temporary Media & Render Exports
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/audio/*
+!backend/audio/.gitkeep
+backend/transcripts/*
+!backend/transcripts/.gitkeep
+backend/exports/*
+!backend/exports/.gitkeep
+
+# Ignore generated media files
+*.mp4
+*.webm
+*.wav
+*.mp3
+*.mkv
+*.mov
 
 # Editor directories and files
 .vscode/*
